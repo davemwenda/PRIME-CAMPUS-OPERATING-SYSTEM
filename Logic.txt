@@ -2,12 +2,20 @@
 
 Admin:
 Edit academic records
-Edit transactions
+Edit transactions(fees, payment)
+Edit courses
 FIle- write
 
 Student
 Read records
 Read transactions
+Read courses
 File-read
+
+Staff:
+Read courses
+Edit academic recoords
+Read payslip
+
 
 
