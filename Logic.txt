@@ -2,7 +2,7 @@
 
 Admin:
 Edit academic records
-Edit transactions(fees, payment)
+Edit transactions(fees, salary)
 Edit courses
 FIle- write
 
@@ -16,6 +16,14 @@ Staff:
 Read courses
 Edit academic recoords
 Read payslip
+
+auth.py
+users.py: Class- Users, Functions- admin, student, staff
+
+Academic records
+Fees payment
+salary payment
+courses
 
 
 
