@@ -1,0 +1,13 @@
+2 types of users: Admin, Student
+
+Admin:
+Edit academic records
+Edit transactions
+FIle- write
+
+Student
+Read records
+Read transactions
+File-read
+
+
