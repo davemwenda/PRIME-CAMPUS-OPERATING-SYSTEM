@@ -7,7 +7,7 @@ Data validation and constraints
 This is the core logic of PCOS.
 If this module is weak, the system is meaningless.'''
 
-from module2 import run_business_rule_tests
+
 
 
 def validate_email(email):  
@@ -1029,4 +1029,5 @@ if __name__ == "__main__":
         print(f"Credits: {course.credits}")
         print(f"Enrollment: {len(course.current_enrollment)}/{course.max_capacity}")
         print(f"Available Seats: {course.get_available_seats()}")
+
         print(f"Course Fee: ${course.fee:.2f}")
