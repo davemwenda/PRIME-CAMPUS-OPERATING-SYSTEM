@@ -882,14 +882,14 @@ def demonstrate_system():
     print("PCOS CORE CAMPUS LOGIC DEMONSTRATION")
     print("=" * 60)
     
-    # Initialize system
+    
     cms = CampusManagementSystem()
     
     # Add courses - USE 6-CHARACTER COURSE CODES
     print("\n1. ADDING COURSES:")
     courses_to_add = [
         {
-            "code": "CSE101",  # FIXED: 6 characters - "CSE" + "101"
+            "code": "CSE101", 
             "title": "Introduction to Computer Science",
             "credits": 3,
             "instructor": "DR_SMITH",
@@ -897,7 +897,6 @@ def demonstrate_system():
             "fee": 70000
         },
         {
-            "code": "MTH201",  # FIXED: 6 characters - "MTH" + "201"
             "title": "Calculus I",
             "credits": 4,
             "instructor": "DR_JOHNSON",
@@ -905,7 +904,7 @@ def demonstrate_system():
             "fee": 50000
         },
         {
-            "code": "CSE201",  # FIXED: 6 characters - "CSE" + "201"
+            "code": "CSE201", 
             "title": "Data Structures",
             "credits": 3,
             "instructor": "DR_SMITH",
@@ -949,18 +948,18 @@ def demonstrate_system():
         success, message = cms.add_student(student_data)
         print(f"  {message}")
     
-    # Enroll students
+ 
     print("\n3. ENROLLING STUDENTS:")
     
-    # Alice enrolls in CSE101
+  
     success, message = cms.enroll_student_in_course("PCOS-01-01-0001", "CSE101", "2024A")
     print(f"  Alice enrolls in CSE101: {message}")
     
-    # Bob enrolls in CSE101
+
     success, message = cms.enroll_student_in_course("PCOS-01-01-0002", "CSE101", "2024A")
     print(f"  Bob enrolls in CSE101: {message}")
     
-    # Process grades for CSE101
+    
     print("\n4. PROCESSING GRADES:")
     grade_data = [
         {"student_id": "PCOS-01-01-0001", "grade": "A"},
@@ -984,7 +983,7 @@ def demonstrate_system():
         for course, grade in transcript['courses']:
             print(f"      {course}: {grade}")
     
-    # System report
+    
     print("\n6. SYSTEM REPORT:")
     report = cms.store_system_report()
     
@@ -995,9 +994,7 @@ def demonstrate_system():
     print("=" * 60)
     
     return cms
-# ==================== MAIN EXECUTION ====================
 
-# ==================== MAIN EXECUTION ====================
 
 if __name__ == "__main__":
     # Run demonstration
@@ -1031,3 +1028,4 @@ if __name__ == "__main__":
         print(f"Available Seats: {course.get_available_seats()}")
 
         print(f"Course Fee: ${course.fee:.2f}")
+
